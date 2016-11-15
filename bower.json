@@ -1,0 +1,23 @@
+{
+  "name": "recipe",
+  "dependencies": {
+    "ember": "~2.8.0",
+    "ember-cli-shims": "0.1.1",
+    "jquery": "2.1.4",
+    "bootstrap": "3.3.7",
+    "moment": "*",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "bootstrap-datepicker": "^1.6.4",
+    "owl.carousel": "^2.2.0",
+    "magnific-popup": "^1.1.0",
+    "animate.css": "^3.5.2",
+    "IcoMoon-Free": "Keyamoon/IcoMoon-Free",
+    "themify-icons": "^0.1.2",
+    "Modernizr": "Modernizr/Modernizr#^3.3.1",
+    "respond": "scottjehl/Respond#^1.4.2",
+    "jquery.easing": "gdsmith/jquery.easing#^1.4.1",
+    "waypoints": "^4.0.1",
+    "jquery.stellar": "^0.6.2",
+    "font-awesome": "~4.5.0"
+  }
+}

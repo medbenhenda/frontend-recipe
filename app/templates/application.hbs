@@ -1,0 +1,97 @@
+<div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Recipe</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{#link-to "recipes"}}Recipe <span class="caret"></span>{{/link-to}}</a>
+                        <ul class="dropdown-menu">
+                            <li>{{#link-to "recipes"}}All{{/link-to}}</li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">{{#link-to "reservation"}}Reservation{{/link-to}}</li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="row" id="gtco-header">
+        <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+        <h1>All in good taste!</h1>
+        </div>
+        <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+            <div class="form-wrap">
+                <div class="tab">
+
+                    <div class="tab-content">
+                        <div class="tab-content-inner active" data-content="signup">
+                            <h3 class="cursive-font">Table Reservation</h3>
+                            <form action="#">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="activities">Persons</label>
+                                        <select name="#" id="activities" class="form-control">
+                                            <option value="">Persons</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="date-start">Date</label>
+                                        <input type="text" id="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label for="date-start">Time</label>
+                                        <input type="text" id="time" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-primary btn-block" value="Reserve Now">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="gtco-section">
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                    {{outlet}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- /container -->

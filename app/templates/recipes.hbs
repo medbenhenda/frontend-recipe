@@ -1,0 +1,24 @@
+{{outlet}}
+{{#each model as |recipeUnit|}}
+    <li>
+        <article class="listing">
+            <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+                <img src="{{recipeUnit.image}}" alt="">
+                <small>View Larger</small>
+            </a>
+            <h3>{{recipeUnit.title}}</h3>
+            <div class="detail owner">
+                <span>Owner:</span> {{recipeUnit.author}}
+            </div>
+            <div class="detail type">
+                <span>Type:</span> {{recipeUnit.type_recipe}}
+            </div>
+            <div class="detail location">
+                <span>Location:</span> {{recipeUnit.description}}
+            </div>
+            <div class="detail bedrooms">
+                <span>Number of bedrooms:</span> {{recipeUnit.created_at}}
+            </div>
+        </article>
+    </li>
+{{/each}}
