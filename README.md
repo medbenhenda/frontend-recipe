@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:medbenhenda/frontend-recipe.git` this repository
 * `cd recipe`
 * `npm install`
 * `bower install`
